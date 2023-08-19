@@ -220,10 +220,26 @@ footer a{
 
 <body>
  <h2>Click this card</h2>
-  <audio controls>
+<!-- Your existing HTML code up to the audio element -->
+<audio id="birthdaySong" controls>
   <source src="song.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
+</audio>
+<div class="body">
+  <div class="birthdayCard" onclick="playBirthdaySong()">
+    <!-- Rest of the card content -->
+  </div>
+</div>
+  
+<!-- Rest of your HTML code -->
+<script>
+function playBirthdaySong() {
+  var audio = document.getElementById("birthdaySong");
+  audio.play();
+}
+</script>
+</body>
+</html>
 <div class="body">
  <div class="birthdayCard">
 <div class="cardFront"><h3 class="happy">HAPPY BIRTHDAY!</h3>
